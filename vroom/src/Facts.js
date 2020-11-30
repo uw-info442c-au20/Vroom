@@ -3,8 +3,8 @@ import React from 'react';
 const home = () => {
     return (
        <div>
-          <h1>Home</h1>
-           <p>Home page body content</p>
+          <h1>Facts about Carbon Emissions</h1>
+           <p>Facts body content</p>
        </div>
     );
 }
