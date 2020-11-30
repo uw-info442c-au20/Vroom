@@ -1,6 +1,6 @@
 import React from 'react';
  
-const home = () => {
+const Facts = () => {
     return (
        <div>
           <h1>Facts about Carbon Emissions</h1>
@@ -9,5 +9,10 @@ const home = () => {
        </div>
     );
 }
+<<<<<<< HEAD
 
 export default home;
+=======
+ 
+export default Facts;
+>>>>>>> 7341e6fd621838667623854c94022604b1ef6645
