@@ -1,6 +1,6 @@
 import React from 'react';
  
-const home = () => {
+const Facts = () => {
     return (
        <div>
           <h1>Facts about Carbon Emissions</h1>
@@ -9,4 +9,4 @@ const home = () => {
     );
 }
  
-export default home;
+export default Facts;
