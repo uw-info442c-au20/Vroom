@@ -14,10 +14,5 @@ const Facts = () => {
        </div>
     );
 }
-<<<<<<< HEAD
 
 export default Facts;
-=======
- 
-export default Facts;
->>>>>>> 172a7490e76dde884a706e7b31778a267090296a
