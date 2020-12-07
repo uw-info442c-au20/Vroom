@@ -2,6 +2,7 @@ import './App.css';
 
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Facts from './Facts';
 import Resources from './Resources';
