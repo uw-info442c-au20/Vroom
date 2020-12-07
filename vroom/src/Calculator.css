@@ -1,0 +1,29 @@
+h1 {
+    margin: 5px 0 15px 15px;
+}
+
+p {
+    margin: 15px 0 10px 10px;
+}
+
+label {
+    display: block;
+    margin: 0 0 10px 20px;
+}
+
+#ei {
+    margin-left: .2em;
+}
+
+#btn {
+    margin-left: 1.1rem;
+}
+
+#ddbox {
+    width: 185px;
+    margin: 6px 2px 6px -2px;
+}
+
+.inputBox {
+    margin-left: 3px;
+}

@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+#background-video{
+
+  height: 100%;
+  width: 100%;
+  top: 10%;
+}
+
+.content {
+  position: absolute;
+  top: 10%;
+}
+
+#ftitle {
+  color: white;
+}

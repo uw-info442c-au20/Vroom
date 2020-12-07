@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import Geocode from 'react-geocode';
 import Dropdown from 'react-dropdown'
 import 'react-dropdown/style.css';
+import './Calculator.css'
  
 const Calculator = () => {
     return (
        <div>
          <h1>Carbon Emissions Calculator</h1>
-         <CalcForm />
+         <div className="calc">
+            <CalcForm />
+         </div>
        </div>
     );
 }
@@ -73,19 +76,22 @@ class CalcForm extends Component {
             <form onSubmit={this.handleSubmit}>
                <label>
                   Start Address:
-                  <input type="text" name="start" value={this.state.start} onChange={this.handleChange} />
+                  <input className="inputBox" id="si" type="text" name="start" value={this.state.start} onChange={this.handleChange} />
                </label>
-               <br />
                <label>
                   End Address:&nbsp;
-                  <input type="text" name="end" value={this.state.end} onChange={this.handleChange} />
+                  <input className="inputBox" id="ei" type="text" name="end" value={this.state.end} onChange={this.handleChange} />
                </label>
-               <br />
-               <input type="submit" value="Submit" />
+               <label>
+                  Method:
+                  <div id="ddbox"><Dropdown id="dd" options={options} onChange={this.onSelect} value={this.state.type} /></div>
+               </label>
+               <input id="btn" type="submit" value="Submit" />
             </form>
-            <p>Total route length: {(this.state.dist === '' ? 0 : this.state.dist).toFixed(2)} miles</p>
-            <p>You would generate {this.emissions(this.state.dist, this.state.type).toFixed(2)} grams of CO2 on this trip.</p>
-            <Dropdown options={options} onChange={this.onSelect} value={this.state.type} />
+            <p>
+                  Total route length: <span style={{color: 'blue'}}>{(this.state.dist === '' ? 0 : this.state.dist).toFixed(2)}</span> <span style={{color: 'black'}}> miles</span>
+            </p>
+            <p>You would generate <span style={{color: 'red'}}>{this.emissions(this.state.dist, this.state.type).toFixed(2)}</span><span style={{color: 'black'}}> grams of CO2 on this trip.</span></p>
          </div>
       );
    }

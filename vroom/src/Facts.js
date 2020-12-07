@@ -6,7 +6,12 @@ import CardDeck from 'react-bootstrap/CardDeck';
 const Facts = () => {
     return (
        <div>
-           <h1>Facts about Carbon Emissions</h1>
+           <video id="background-video" loop autoPlay muted>
+              <source src={process.env.PUBLIC_URL + "/bg.mp4"} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+           <div className="content">
+            <h1 id="ftitle"> Facts about Carbon Emissions</h1>
            <CardDeck>
                <Card>
                    <Card.Body>
@@ -53,8 +58,8 @@ const Facts = () => {
                     <Card.Img variant="bottom" src="https://i.imgur.com/j5BMD4C.jpg"/>
                 </Card>
             </CardDeck>
+            </div>
        </div>
-    );
+    );    
 }
-
 export default Facts;

@@ -3,6 +3,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import './Navigation.css'
  
 const Navigation = () => {
     return (
@@ -12,9 +13,9 @@ const Navigation = () => {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                <Nav className="mr-auto">
-                  <NavLink to="/">Facts</NavLink>
-                  <NavLink to="/Calculator">Calculator</NavLink>
-                  <NavLink to="/Resources">Resources</NavLink>
+                  <NavLink className="nl" to="/">Facts</NavLink>
+                  <NavLink className="nl" to="/Calculator">Calculator</NavLink>
+                  <NavLink className="nl" to="/Resources">Resources</NavLink>
                </Nav>
             </Navbar.Collapse>
          </Navbar>
